@@ -1,0 +1,71 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Patient Admission Alert</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            background-color: #004085;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .content {
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .button {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #888;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>New Patient Admission Alert</h2>
+        </div>
+        <div class="content">
+            <p>Dear <strong>{{ employee.name }}</strong>,</p>
+            
+            <p>A new patient record has been created and requires your immediate review. Please access the record at the link below to confirm and update any necessary details.</p>
+            
+            <p><strong>Patient ID:</strong> 11773221</p>
+            <p><strong>Admission Date:</strong> 20/10/24</p>
+            
+            <a href="{{ tracking_url }}" class="button">Review Patient Record</a>
+            
+            <p>If you have any questions, please contact the IT support team.</p>
+            
+            <p>Thank you,</p>
+            <p>Medical Records Department</p>
+        </div>
+        <div class="footer">
+            <p>This is an automated message. Please do not reply directly to this email.</p>
+        </div>
+    </div>
+</body>
+</html>
