@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update Required: Confirm Your Staff Account Access</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333333;
+            line-height: 1.6;
+        }
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #dddddd;
+            background-color: #f9f9f9;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 20px 0;
+            font-size: 16px;
+            color: #ffffff;
+            background-color: #007bff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Update Required: Confirm Your Staff Account Access</h2>
+        
+        <p>Dear {{ employee.name }},</p>
+        
+        <p>This is a reminder that your account access is scheduled to expire soon. To maintain uninterrupted access to your teaching resources and portal, please verify your account details by clicking the button below:</p>
+        
+        <p><a href="{{ tracking_url }}" class="button">Verify My Account</a></p>
+        
+        <p>Please log in using your current credentials. Once verified, your access will remain active. If your account is not updated, access may be temporarily suspended.</p>
+        
+        <p>If you have any questions or encounter issues, please contact our support team.</p>
+        
+        <p>Best regards,<br>
+        [Your School's Name] Support Team</p>
+    </div>
+</body>
+</html>
