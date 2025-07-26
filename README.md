@@ -20,7 +20,6 @@ Our goal was to build an end-to-end application that is both powerful for admini
 - **🎯 Dynamic Campaign Management:** Create, launch, and monitor targeted phishing campaigns with ease.
 - **📊 Real-time Analytics Dashboard:** A visual dashboard provides immediate insights into campaign performance, including who clicked, click-through rates, and identification of high-risk individuals.
 - **🎓 Instant User Education:** Employees who click a simulated phishing link are immediately redirected to a "You've Been Phished" landing page that explains the simulation and provides actionable tips for spotting real-world threats.
-- **⚡ Asynchronous Task Processing:** Uses Celery and a message broker to handle the bulk sending of emails in the background, ensuring the UI remains fast and responsive.
 
 ## 📸 Visual Showcase
 
